@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { NavBar } from '../../components/navbar';
 
 const PageContainer = styled.div`
   ${tw`flex
@@ -12,5 +13,9 @@ overflow-x-hidden`}
 `;
 
 export function Homepage() {
-  return <PageContainer>Hello world</PageContainer>;
+  return (
+    <PageContainer>
+      <NavBar />
+    </PageContainer>
+  );
 }
